@@ -1,0 +1,48 @@
+.intro{
+    text-align: center;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.intro h1{
+    font-size: 50px;
+    color: #65bdad;
+    margin: 30px 0 20px 0;
+}
+
+.intro h2{
+    font-size: 16px;
+    color: 	rgb(119,119,119);
+}
+
+.intro h2 ul{
+    margin-top: 30px;
+    list-style: none;
+    text-align: center;
+}
+
+.intro h2 ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.intro h2 ul li a{
+    display: block;
+    width: 235px;
+    padding: 15px 20px;
+    border: 3px solid #7BB7FA;
+    color: #7BB7FA !important;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+
+.intro h2 ul li a:hover{
+    background: #7BB7FA;
+    color: #ffffff !important;
+}

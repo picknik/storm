@@ -1,0 +1,27 @@
+.container > header{
+
+    background: #44ddc2;
+    padding: 20px;
+
+    font-size: 2.3em;
+    color: #ffffff;
+    letter-spacing: 7px;
+}
+
+.container > header > .header__left{
+    float: left;
+}
+
+.container > header > .header__right{
+    float: right;
+}
+
+.container > header a{
+    color: #ffffff;
+}
+
+.container > header .brand{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    letter-spacing: 2px;
+}

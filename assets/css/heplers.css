@@ -1,0 +1,11 @@
+.clearfix:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.fixwidth{
+    width: 1240px;
+}

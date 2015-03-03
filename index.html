@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="clearfix">
+            <div class="header__left">
+                <a href="#" class="brand">PressHouse</a>
+            </div>
+            <div class="header__right">
+                <a href="#"><i class="fa fa-users"></i></a>
+                <a href="#"><i class="fa fa-tag"></i></a>
+                <a href="#"><i class="fa fa-child"></i></a>
+                <a href="#"><i class="fa fa-comment-o"></i></a>
+            </div>
+        </header>
+        <section class="h2000">
+
+            <div class="intro">
+                <h1>PressHouse</h1>
+                <h2>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis sem vel justo commodo ullamcorper. Pellentesque congue justo non convallis dignissim.
+                    <ul>
+                        <li><a href="#">subscribe</a></li>
+                        <li><a href="#">preview</a></li>
+                    </ul>
+                </h2>
+            </div>
+
+        </section>
+        <footer>
+            рыба текст
+        </footer>
+    </div>
+
+    <script src="assets/js/jquery-1.11.2.js"></script>
+    <script>
+        $(document).ready(function(){
+            window.$header = $('.container header')
+
+            set_intro_into_center()
+            window.onresize = function(){
+                set_intro_into_center()
+            }
+        })
+
+        function set_intro_into_center(){
+            var $intro = $('.intro')
+            var tbmargin = (($(window).height() - $header.outerHeight()) - $intro.innerHeight()) / 2
+            $intro.css('marginTop', tbmargin)
+            $intro.css('marginBottom', tbmargin)
+        }
+
+    </script>
+</body>
+</html>
