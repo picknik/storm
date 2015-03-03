@@ -21,7 +21,7 @@
             </div>
         </header>
         <section>
-            <div class="out_intro test_block">
+            <div class="out_intro">
                 <div class="intro">
                     <h1>PressHouse</h1>
                     <h2>
@@ -35,7 +35,14 @@
             </div>
         </section>
         <footer>
-            рыба текст
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a pretium massa.
+            Ut elit ipsum, consectetur at volutpat et, rhoncus vitae felis.
+            Nunc et ligula lorem. Fusce tempus odio eu ultricies bibendum.
+            Morbi sit amet ligula aliquet, facilisis augue ut, congue lectus.
+            Nullam et ligula scelerisque, aliquam tortor quis, placerat nisi.
+            Phasellus nec molestie eros. Nulla ultrices molestie molestie.
+            Nulla cursus libero eget gravida scelerisque. Sed hendrerit quis nibh porta eleifend.
+            Etiam vitae mauris id elit ullamcorper iaculis ac id neque.
         </footer>
     </div>
 
@@ -53,9 +60,12 @@
         function set_intro_into_center(){
             var $out_intro = $('.out_intro')
             var $intro = $('.intro')
-            var tbmargin = ($out_intro.height() - $intro.innerHeight()) / 2
 
             $out_intro.css('height', $(window).height() - $header.outerHeight())
+
+            var tbmargin = ($out_intro.height() - $intro.innerHeight()) / 2
+            //must be hire
+
             $out_intro.css('paddingTop', tbmargin)
             $out_intro.css('paddingBottom', tbmargin)
         }
