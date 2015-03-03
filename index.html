@@ -20,19 +20,19 @@
                 <a href="#"><i class="fa fa-comment-o"></i></a>
             </div>
         </header>
-        <section class="h2000">
-
-            <div class="intro">
-                <h1>PressHouse</h1>
-                <h2>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis sem vel justo commodo ullamcorper. Pellentesque congue justo non convallis dignissim.
-                    <ul>
-                        <li><a href="#">subscribe</a></li>
-                        <li><a href="#">preview</a></li>
-                    </ul>
-                </h2>
+        <section>
+            <div class="out_intro test_block">
+                <div class="intro">
+                    <h1>PressHouse</h1>
+                    <h2>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis sem vel justo commodo ullamcorper. Pellentesque congue justo non convallis dignissim.
+                        <ul>
+                            <li><a href="#">subscribe</a></li>
+                            <li><a href="#">preview</a></li>
+                        </ul>
+                    </h2>
+                </div>
             </div>
-
         </section>
         <footer>
             рыба текст
@@ -51,10 +51,13 @@
         })
 
         function set_intro_into_center(){
+            var $out_intro = $('.out_intro')
             var $intro = $('.intro')
-            var tbmargin = (($(window).height() - $header.outerHeight()) - $intro.innerHeight()) / 2
-            $intro.css('marginTop', tbmargin)
-            $intro.css('marginBottom', tbmargin)
+            var tbmargin = ($out_intro.height() - $intro.innerHeight()) / 2
+
+            $out_intro.css('height', $(window).height() - $header.outerHeight())
+            $out_intro.css('paddingTop', tbmargin)
+            $out_intro.css('paddingBottom', tbmargin)
         }
 
     </script>
