@@ -33,6 +33,11 @@
                     </h2>
                 </div>
             </div>
+            <div class="h400"></div>
+            <div id="h400" class="h400"></div>
+            <div class="h400"></div>
+            <div class="h400"></div>
+            <div class="h400"></div>
         </section>
         <footer>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a pretium massa.
@@ -55,6 +60,8 @@
             window.onresize = function(){
                 set_intro_into_center()
             }
+            $('body').on("scroll", '.h400', function() {alert ('test');});
+            console.log($(document).find('.h400'))
         })
 
         function set_intro_into_center(){
